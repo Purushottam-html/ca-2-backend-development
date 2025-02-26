@@ -24,7 +24,7 @@ app.get("/user" , (req,res) => {
     if(user){
         res.json({message: "user found", data: user})
     } else{
-        res.status(404).json(message: "user not found" )
+        res.status(404).json({message: "user not found"} )
     }
 
 
